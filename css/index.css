@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     color: black;
@@ -37,6 +41,28 @@ p {
 }
 
 /* Navbar */
+.navbar {
+    background-color: #4DA9E1 !important;
+}
+
+nav a{
+    color: #fff !important;
+}
+
+.nav-item {
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.nav-item:hover, .nav-item:active {
+    background-color: #fff;
+    color: rgba(77, 166, 225) !important;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
 .navbar-brand {
     font-family: 'Seact Rough';
 }
@@ -69,6 +95,24 @@ p {
 #hero p {   
     text-shadow: 2px 2px 2px #ccc;
     font-size: 1.4em;
+}
+
+.hero-btn {
+    display: inline-block;
+    width: 200px;
+    padding: 6px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.hero-btn:hover, .hero-btn:active {
+    background-color: #fff;
+    color: rgba(77, 166, 225);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 /* Main */
@@ -115,7 +159,9 @@ p {
 
 .card {
     border: none;
+    overflow: hidden;
     padding-bottom: 70px;
+    position: relative;
 }
 
 /* .pic {
@@ -193,7 +239,7 @@ p {
 }
 
 /* Grid */
-@media (min-width: 700px) {
+@media (min-width: 750px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 40em)) 1fr;
@@ -203,7 +249,7 @@ p {
         grid-column: 2/4;
     }
 
-    #section-c #cards {
+    #section-c .cards {
         padding-bottom: 100px;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -231,7 +277,25 @@ p {
         grid-column: 5/7;
     }
 
-    #footer {
-        
+    .middle {
+        transition: .5s ease;
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        /* transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%); */
+        text-align: center;
+      }
+    
+    #section-c .card .card-img-top:hover{
+        transition-timing-function: ease-in;
+        transition: 0.5s;
+        background-color:#000;
+        transform: scale(1.2);
+    }
+    
+    #section-c .card img{
+        transition-timing-function: ease-out;
+        transition: 0.5s;
     }
 }

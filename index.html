@@ -19,12 +19,12 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Webstr</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button id="nav-toggle-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="#hero">Home
                 </a>
                 <a class="nav-item nav-link" href="#section-a">About</a>
@@ -40,7 +40,7 @@
         <div class="content-wrap">
             <h1>Webstr</h1>
             <p>Creating modern web and mobile applications</p>
-            <a href="#section-a" class="btn btn-primary">Learn More</a>
+            <a href="#section-a" class="btn hero-btn">Learn More</a>
         </div>
     </header>
 
@@ -85,55 +85,65 @@
         <section id="section-c" class="grid">
             <div class="content-wrap">
                 <h1>Our Work</h2>
-                <p id="section-c-small" class="text-muted">Here are some of the projects we helped bring to life.</p>
+                    <p id="section-c-small" class="text-muted">Here are some of the projects we helped bring to life.</p>
 
-                <div id="cards">
-                    <div class="card" id="card-1">
-                        <img  id="pic-1" class="card-img-top" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f9f0fdc18a215ec725f8ca61dc6fcbdf&auto=format&fit=crop&w=1350&q=80"
-                            alt="Card image cap">
-                        <div class="overlay"></div>
-                        <div class="card-body">
-                            <p class="card-text">Bose</p>
-                            <small class="text-muted font-italic">Website</small>
+                    <div id="rig" class="cards">
+                        <div class="card rig-cell" id="card-1">
+                            <a href="#">
+                                <img id="pic-1" class="card-img-top" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f9f0fdc18a215ec725f8ca61dc6fcbdf&auto=format&fit=crop&w=1350&q=80"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="overlay"></div>
+                            <div class="card-body middle">
+                                <p class="card-text">Bose</p>
+                                <small class="font-italic">Website</small>
+                            </div>
+                        </div>
+                        <div class="card rig-cell" id="card-2">
+                            <a href="#">
+                                <img class="card-img-top pic" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=51a9aa4dd828bf5d50fcd8154dc405b8&auto=format&fit=crop&w=1350&q=80"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="overlay"></div>
+                            <div class="card-body middle">
+                                <p class="card-text">Peugeot</p>
+                                <small class="font-italic">Mobile App</small>
+                            </div>
+                        </div>
+                        <div class="card rig-cell" id="card-3">
+                            <a href="#">
+                                <img class="card-img-top pic" src="https://images.unsplash.com/photo-1518131672697-613becd4fab5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb83a90eb70b431ca38229d3100c2b1f&auto=format&fit=crop&w=1350&q=80"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="overlay"></div>
+                            <div class="card-body middle">
+                                <p class="card-text">Timex</p>
+                                <small class="font-italic">Mobile App</small>
+                            </div>
+                        </div>
+                        <div class="card rig-cell" id="card-4">
+                            <a href="#">
+                                <img class="card-img-top pic" src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=deb85808f71039e3e039fdb18ba26019&auto=format&fit=crop&w=1350&q=80"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="overlay"></div>
+                            <div class="card-body middle">
+                                <p class="card-text">The Suit</p>
+                                <small class="font-italic">Website</small>
+                            </div>
+                        </div>
+                        <div class="card" id="card-5">
+                            <a href="#">
+                                <img class="card-img-top pic" src="https://images.unsplash.com/photo-1526413115846-4ae102f384d5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b65d2e474f9737bbeba9c3831701cb5b&auto=format&fit=crop&w=1352&q=80"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="overlay"></div>
+                            <div class="card-body middle">
+                                <p class="card-text">Canon</p>
+                                <small class="font-italic">Website</small>
+                            </div>
                         </div>
                     </div>
-                    <div class="card" id="card-2">
-                        <img class="card-img-top pic" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=51a9aa4dd828bf5d50fcd8154dc405b8&auto=format&fit=crop&w=1350&q=80"
-                            alt="Card image cap">
-                        <div class="overlay"></div>
-                        <div class="card-body">
-                            <p class="card-text">Peugeot</p>
-                            <small class="text-muted font-italic">Mobile App</small>
-                        </div>
-                    </div>
-                    <div class="card" id="card-3">
-                        <img class="card-img-top pic" src="https://images.unsplash.com/photo-1518131672697-613becd4fab5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb83a90eb70b431ca38229d3100c2b1f&auto=format&fit=crop&w=1350&q=80"
-                            alt="Card image cap">
-                        <div class="overlay"></div>
-                        <div class="card-body">
-                            <p class="card-text">Timex</p>
-                            <small class="text-muted font-italic">Mobile App</small>
-                        </div>
-                    </div>
-                    <div class="card" id="card-4">
-                        <img class="card-img-top pic" src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=deb85808f71039e3e039fdb18ba26019&auto=format&fit=crop&w=1350&q=80"
-                            alt="Card image cap">
-                        <div class="overlay"></div>
-                        <div class="card-body">
-                            <p class="card-text">The Suit</p>
-                            <small class="text-muted font-italic">Website</small>
-                        </div>
-                    </div>
-                    <div class="card" id="card-5">
-                        <img class="card-img-top pic" src="https://images.unsplash.com/photo-1526413115846-4ae102f384d5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b65d2e474f9737bbeba9c3831701cb5b&auto=format&fit=crop&w=1352&q=80"
-                            alt="Card image cap">
-                        <div class="overlay"></div>
-                        <div class="card-body">
-                            <p class="card-text">Canon</p>
-                            <small class="text-muted font-italic">Website</small>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
